@@ -1,6 +1,6 @@
 // Setting up configuration for API
 module.exports = {
-	'port' : process.env.port || 8080,
+	'port' : process.env.port || 5000,
 	'database' : 'mongodb://root:admin@ds047732.mongolab.com:47732/v1' ,
 	'email': {
 		'service': 'gmail',

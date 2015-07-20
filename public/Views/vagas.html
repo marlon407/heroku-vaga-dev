@@ -1,6 +1,12 @@
 <form ng-submit="upload()">
-  <div class="row">
-    <div class="columns text-center">
+	<div class="row text-center">
+		<h1>Vaga para Desenvolvedor</h1>
+	</div>
+  <div class="row container text-center">
+			<div class="row">
+				<p>Dados do Cantidato:</p>
+			</div>
+		
       <div class="row">
         <div class="small-3 columns">
           <label class="right inline">Nome</label>
@@ -17,13 +23,18 @@
           <input ng-pattern="emailPattern" required ng-model="survey.email" type="email" placeholder="marcos@email.com">
         </div>
       </div>
+		
+			<div class="row">
+				<p>Avalie seu conhecimento de 0 a 10 nos seguintes itens:</p>
+			</div>
 			
 			<div class="row">
         <div class="small-3 columns">
           <label class="right inline">Html</label>
         </div>
         <div class="small-7 end columns">
-          <input ng-model="survey.html_score" type="text" placeholder="8">
+					<input type="range" ng-model="survey.html_score" min="0" max="10">
+					<input class="show-value" ng-value="survey.html_score" type="text" placeholder="0">
         </div>
       </div>
 			
@@ -32,7 +43,8 @@
           <label class="right inline">CSS</label>
         </div>
         <div class="small-7 end columns">
-          <input ng-model="survey.css_score" type="text" placeholder="8">
+					<input type="range" ng-model="survey.css_score" min="0" max="10">
+					<input class="show-value" ng-value="survey.css_score" type="text" placeholder="0">
         </div>
       </div>
 			
@@ -41,7 +53,8 @@
           <label class="right inline">JavaScript</label>
         </div>
         <div class="small-7 end columns">
-          <input ng-model="survey.js_score" type="text" placeholder="8">
+					<input type="range" ng-model="survey.js_score" min="0" max="10">
+					<input class="show-value" ng-value="survey.js_score" type="text" placeholder="0">
         </div>
       </div>
 			
@@ -50,7 +63,8 @@
           <label class="right inline">Python</label>
         </div>
         <div class="small-7 end columns">
-          <input ng-model="survey.python_score" type="text" placeholder="8">
+					<input type="range" ng-model="survey.python_score" min="0" max="10">
+					<input class="show-value" ng-value="survey.python_score" type="text" placeholder="0">
         </div>
       </div>
 			
@@ -59,7 +73,8 @@
           <label class="right inline">Django</label>
         </div>
         <div class="small-7 end columns">
-          <input ng-model="survey.django_score" type="text" placeholder="8">
+					<input type="range" ng-model="survey.django_score" min="0" max="10">
+					<input class="show-value" ng-value="survey.django_score" type="text" placeholder="0">
         </div>
       </div>
 			
@@ -68,7 +83,8 @@
           <label class="right inline">Andreoid</label>
         </div>
         <div class="small-7 end columns">
-          <input ng-model="survey.android_score" type="text" placeholder="8">
+					<input type="range" ng-model="survey.android_score" min="0" max="10">
+					<input class="show-value" ng-value="survey.android_score" type="text" placeholder="0">
         </div>
       </div>
 			
@@ -77,13 +93,10 @@
           <label class="right inline">IOS</label>
         </div>
         <div class="small-7 end columns">
-          <input ng-model="survey.ios_score" type="text" placeholder="8">
+					<input type="range" ng-model="survey.ios_score" value="0" min="0" max="10">
+					<input class="show-value" ng-value="survey.ios_score" type="text" placeholder="0">
         </div>
-      </div>
-			
-			<range-slider  id="my-slider-name"  class="radius" start-at="0" stop-at="10"  ng-model="survey.html"/>
-			</range-slider>
-			<input type="submit" value="Save" class="button">
-    </div>
+			</div>
+			<input type="submit" value="Salvar" class="button">
   </div
 </form>

@@ -7,12 +7,12 @@ angular.module('app', [
 //Providing routes for the whole applicarion so far
 .config(function($routeProvider, $locationProvider) {
     $routeProvider
-      .when('/new', {
+      .when('/', {
         templateUrl: 'Views/vagas.html',
         controller: 'userCtrl'
       })
-			.when('/all', {
-        templateUrl: 'Views/vagas.html',
+			.when('/sucess', {
+        templateUrl: 'Views/sucess.html',
         controller: 'userCtrl'
       })
 		.otherwise({
@@ -21,11 +21,11 @@ angular.module('app', [
 		
 		//$locationProvider.html5Mode(true);
   })
-	.run(function ($rootScope, $location) {
-		$rootScope.$on('$viewContentLoaded', function () {
-			$(document).foundation('slider', 'reflow');
-		});
-	})
+.run(function($rootScope) {
+    $rootScope.$on('$viewContentLoaded', function () {
+        $(document).foundation();
+    });
+})
 
 .factory('Users', function ($http) {
 		return{
