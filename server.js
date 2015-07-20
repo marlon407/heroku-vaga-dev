@@ -28,6 +28,6 @@ mongoose.connection.once('open', function(){
 	);
 
 	// Starting server
-	app.listen(config.port);
+	app.listen(process.env.PORT || 5000);
 	console.log('API running at http://localhost:' + config.port);
 });
