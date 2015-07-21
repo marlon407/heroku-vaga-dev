@@ -9,7 +9,10 @@
 <h5>*Nodemailer</h5>
 <h5>*Angular JS</h5>
 
-<h3>Live Demo(heroku):</h3>
-<h5><https://heroku-vaga-dev.herokuapp.com/#/></h5>
+<h3>Live Demo:</h3>
+<h5><a href="https://heroku-vaga-dev.herokuapp.com/#/">https://heroku-vaga-dev.herokuapp.com/</a></h5>
+
+<h3>Author:</h3>
+<h5>Marlon Diego Casagranda França</h5>
 
 
