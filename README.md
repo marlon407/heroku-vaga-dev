@@ -1,5 +1,5 @@
 # heroku-vaga-dev
-<h2>Web Solution to avaliate cantidates for a developer position.</h2>
+<h2>Web Solution to evaluate candidates for a developer position.</h2>
 
 <h3>Project Detail:</h3>
 <h5>*Angular JS</h4>
