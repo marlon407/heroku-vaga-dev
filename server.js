@@ -1,4 +1,3 @@
-// April 2015, Ciro Ferreira da Cruz
 
 // Getting required packages
 var config 		= require('./config'),

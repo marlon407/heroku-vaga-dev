@@ -1,5 +1,3 @@
-// April 2015, Ciro Ferreira da Cruz
-
 // Getting required packages
 var mongoose 	= require('mongoose');
 
@@ -42,29 +40,33 @@ var UserSchema = new mongoose.Schema({
 	}
 });
 
-UserSchema.methods.isFrontEndDev = function(user){
-	if(user.css_score >= 7 && user.html_score >= 7 && user.js_score >= 7){
+//Verifying type of email that should be sent
+UserSchema.methods.isFrontEndDev = function(){
+	if(this.css_score >= 7 && this.html_score >= 7 && this.js_score >= 7){
 		return true;
 	}
 	return false;
 }
 
-UserSchema.methods.isBackEndDev = function(user){
-	if(user.python_score >= 7 && user.django_score >= 7){
+//Verifying type of email that should be sent
+UserSchema.methods.isBackEndDev = function(){
+	if(this.python_score >= 7 && this.django_score >= 7){
 		return true;
 	}
 	return false;
 }
 
-UserSchema.methods.isMobileDev= function(user){
-	if(user.ios_score >= 7 && user.android_score >= 7){
+//Verifying type of email that should be sent
+UserSchema.methods.isMobileDev= function(){
+	if(this.ios_score >= 7 && this.android_score >= 7){
 		return true;
 	}
 	return false;
 }
 
-UserSchema.methods.isGeneral = function(user){
-	if(user.ios_score < 7  && user.django_score < 7 && user.css_score < 7 ){
+//Verifying type of email that should be sent
+UserSchema.methods.isGeneral = function(){
+	if(!this.isMobileDev() && !this.isBackEndDev() && !this.isFrontEndDev() ){
 		return true;
 	}
 	return false;

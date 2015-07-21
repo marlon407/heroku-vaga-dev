@@ -4,7 +4,7 @@
 	</div>
   <div class="row container text-center">
 			<div class="row">
-				<p>Dados do Cantidato:</p>
+				<p>Dados do Candidato:</p>
 			</div>
 		
       <div class="row">
@@ -30,11 +30,11 @@
 			
 			<div class="row">
         <div class="small-3 columns">
-          <label class="right inline">Html</label>
+          <label class="right inline">HTML</label>
         </div>
         <div class="small-7 end columns">
 					<input type="range" ng-model="survey.html_score" min="0" max="10">
-					<input class="show-value" ng-value="survey.html_score" type="text" placeholder="0">
+					<input disabled class="show-value" ng-value="survey.html_score" type="text" placeholder="0">
         </div>
       </div>
 			
@@ -44,17 +44,17 @@
         </div>
         <div class="small-7 end columns">
 					<input type="range" ng-model="survey.css_score" min="0" max="10">
-					<input class="show-value" ng-value="survey.css_score" type="text" placeholder="0">
+					<input disabled class="show-value" ng-value="survey.css_score" type="text" placeholder="0">
         </div>
       </div>
 			
 			<div class="row">
         <div class="small-3 columns">
-          <label class="right inline">JavaScript</label>
+          <label class="right inline">Javascript</label>
         </div>
         <div class="small-7 end columns">
 					<input type="range" ng-model="survey.js_score" min="0" max="10">
-					<input class="show-value" ng-value="survey.js_score" type="text" placeholder="0">
+					<input disabled class="show-value" ng-value="survey.js_score" type="text" placeholder="0">
         </div>
       </div>
 			
@@ -64,7 +64,7 @@
         </div>
         <div class="small-7 end columns">
 					<input type="range" ng-model="survey.python_score" min="0" max="10">
-					<input class="show-value" ng-value="survey.python_score" type="text" placeholder="0">
+					<input disabled class="show-value" ng-value="survey.python_score" type="text" placeholder="0">
         </div>
       </div>
 			
@@ -74,29 +74,30 @@
         </div>
         <div class="small-7 end columns">
 					<input type="range" ng-model="survey.django_score" min="0" max="10">
-					<input class="show-value" ng-value="survey.django_score" type="text" placeholder="0">
+					<input disabled class="show-value" ng-value="survey.django_score" type="text" placeholder="0">
         </div>
       </div>
 			
 			<div class="row">
         <div class="small-3 columns">
-          <label class="right inline">Andreoid</label>
-        </div>
-        <div class="small-7 end columns">
-					<input type="range" ng-model="survey.android_score" min="0" max="10">
-					<input class="show-value" ng-value="survey.android_score" type="text" placeholder="0">
-        </div>
-      </div>
-			
-			<div class="row">
-        <div class="small-3 columns">
-          <label class="right inline">IOS</label>
+          <label class="right inline">Desenvolvimento iOS</label>
         </div>
         <div class="small-7 end columns">
 					<input type="range" ng-model="survey.ios_score" value="0" min="0" max="10">
-					<input class="show-value" ng-value="survey.ios_score" type="text" placeholder="0">
+					<input disabled class="show-value" ng-value="survey.ios_score" type="text" placeholder="0">
         </div>
 			</div>
-			<input type="submit" value="Salvar" class="button">
+			
+			<div class="row">
+        <div class="small-3 columns">
+          <label class="right inline">Desenvolvimento Android</label>
+        </div>
+        <div class="small-7 end columns">
+					<input type="range" ng-model="survey.android_score" min="0" max="10">
+					<input disabled class="show-value" ng-value="survey.android_score" type="text" placeholder="0">
+        </div>
+      </div>
+		
+			<input type="submit" value="Enviar" class="button">
   </div
 </form>

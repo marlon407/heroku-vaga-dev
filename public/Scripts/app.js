@@ -6,34 +6,23 @@ angular.module('app', [
 
 //Providing routes for the whole applicarion so far
 .config(function($routeProvider, $locationProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'Views/vagas.html',
-        controller: 'userCtrl'
-      })
-			.when('/sucess', {
-        templateUrl: 'Views/sucess.html',
-        controller: 'userCtrl'
-      })
-		.otherwise({
-			redirect : "/"	
-		});
-		
-		//$locationProvider.html5Mode(true);
-  })
-.run(function($rootScope) {
-    $rootScope.$on('$viewContentLoaded', function () {
-        $(document).foundation();
-    });
-})
+	$routeProvider
+		.when('/', {
+			templateUrl: 'Views/vagas.html',
+			controller: 'userCtrl'
+		})
+		.when('/sucess', {
+			templateUrl: 'Views/sucess.html',
+			controller: 'userCtrl'
+		})
+	.otherwise({
+		redirect : "/"	
+	});
+ })
 
 .factory('Users', function ($http) {
-		return{
-	
-		all: function(){
-			return $http.get('/api/users/');
-		},
-		
+	return{
+		//Create new user based on survey
 		create: function(data){
 			return $http.post('/api/users/', data);
 		}

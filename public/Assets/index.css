@@ -1,5 +1,6 @@
 .container {
 	margin-top: 20px;
+	margin-bottom: 20px;
 	border: 1px solid;
 	width: 60%;
 	padding: 15px;
@@ -13,7 +14,7 @@ input[type=range] {
 	width: 90%;
 	height:10px;
 	vertical-align: middle;
-	margin-top: 10px;
+	margin-top: 15px;
 	outline: none;
 	float: left;
 }
@@ -31,4 +32,6 @@ input[type="range"]::-webkit-slider-thumb {
 	height: 30px !important;
 	width: 9% !important;
 	text-align: center;
+	background-color: white !important;
+	margin-top: 5px !important;
 }
