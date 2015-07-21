@@ -9,6 +9,11 @@
 <h5>*Nodemailer</h5>
 <h5>*Angular JS</h5>
 
+<h3>Usage</h3>
+<h5>Download project</h5>
+<h5>Go to terminal and type <i>npm install</i></h5>
+
+
 <h3>Live Demo:</h3>
 <h5><a href="https://heroku-vaga-dev.herokuapp.com/#/">https://heroku-vaga-dev.herokuapp.com/</a></h5>
 
