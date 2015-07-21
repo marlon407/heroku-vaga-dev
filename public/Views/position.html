@@ -1,0 +1,103 @@
+<form ng-submit="upload()">
+	<div class="row text-center">
+		<h1>Vaga para Desenvolvedor</h1>
+	</div>
+  <div class="row container text-center">
+			<div class="row">
+				<p>Dados do Candidato:</p>
+			</div>
+		
+      <div class="row">
+        <div class="small-3 columns">
+          <label class="right inline">Nome</label>
+        </div>
+        <div class="small-7 end columns">
+          <input required ng-model="survey.name" type="text" placeholder="Marcos da Silva">
+        </div>
+      </div>
+			<div class="row">
+        <div class="small-3 columns">
+          <label class="right inline">Email</label>
+        </div>
+        <div class="small-7 end columns">
+          <input ng-pattern="emailPattern" required ng-model="survey.email" type="email" placeholder="marcos@email.com">
+        </div>
+      </div>
+		
+			<div class="row">
+				<p>Avalie seu conhecimento de 0 a 10 nos seguintes itens:</p>
+			</div>
+			
+			<div class="row">
+        <div class="small-3 columns">
+          <label class="right inline">HTML</label>
+        </div>
+        <div class="small-7 end columns">
+					<input type="range" ng-model="survey.html_score" min="0" max="10">
+					<input disabled class="show-value" ng-value="survey.html_score" type="text" placeholder="0">
+        </div>
+      </div>
+			
+			<div class="row">
+        <div class="small-3 columns">
+          <label class="right inline">CSS</label>
+        </div>
+        <div class="small-7 end columns">
+					<input type="range" ng-model="survey.css_score" min="0" max="10">
+					<input disabled class="show-value" ng-value="survey.css_score" type="text" placeholder="0">
+        </div>
+      </div>
+			
+			<div class="row">
+        <div class="small-3 columns">
+          <label class="right inline">Javascript</label>
+        </div>
+        <div class="small-7 end columns">
+					<input type="range" ng-model="survey.js_score" min="0" max="10">
+					<input disabled class="show-value" ng-value="survey.js_score" type="text" placeholder="0">
+        </div>
+      </div>
+			
+			<div class="row">
+        <div class="small-3 columns">
+          <label class="right inline">Python</label>
+        </div>
+        <div class="small-7 end columns">
+					<input type="range" ng-model="survey.python_score" min="0" max="10">
+					<input disabled class="show-value" ng-value="survey.python_score" type="text" placeholder="0">
+        </div>
+      </div>
+			
+			<div class="row">
+        <div class="small-3 columns">
+          <label class="right inline">Django</label>
+        </div>
+        <div class="small-7 end columns">
+					<input type="range" ng-model="survey.django_score" min="0" max="10">
+					<input disabled class="show-value" ng-value="survey.django_score" type="text" placeholder="0">
+        </div>
+      </div>
+			
+			<div class="row">
+        <div class="small-3 columns">
+          <label class="right inline">Desenvolvimento iOS</label>
+        </div>
+        <div class="small-7 end columns">
+					<input type="range" ng-model="survey.ios_score" value="0" min="0" max="10">
+					<input disabled class="show-value" ng-value="survey.ios_score" type="text" placeholder="0">
+        </div>
+			</div>
+			
+			<div class="row">
+        <div class="small-3 columns">
+          <label class="right inline">Desenvolvimento Android</label>
+        </div>
+        <div class="small-7 end columns">
+					<input type="range" ng-model="survey.android_score" min="0" max="10">
+					<input disabled class="show-value" ng-value="survey.android_score" type="text" placeholder="0">
+        </div>
+      </div>
+		
+			<input type="submit" value="Enviar" class="button">
+  </div
+</form>

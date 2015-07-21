@@ -8,7 +8,7 @@ angular.module('app', [
 .config(function($routeProvider, $locationProvider) {
 	$routeProvider
 		.when('/', {
-			templateUrl: 'Views/vagas.html',
+			templateUrl: 'Views/position.html',
 			controller: 'userCtrl'
 		})
 		.when('/sucess', {
