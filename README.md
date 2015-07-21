@@ -1,10 +1,15 @@
 # heroku-vaga-dev
-<h2>solução web para a avaliação de candidatos para a vaga de desenvolvedor.</h2>
+<h2>Web Solution to avaliate cantidates for a developer position.</h2>
 
-<h3>Detalhes do projeto:</h3>
-<h4>Angular JS</h4>
-<h4>Node JS</h4>
-<h4>Mongo DB</h4>
-<h4>Foundation Framework</h4>
-<h4>Nodemailer</h4>
-<h4>Angular JS</h4>
+<h3>Project Detail:</h3>
+<h5>*Angular JS</h4>
+<h5>*Node JS</h4>
+<h5>*Mongo DB</h5>
+<h5>*Foundation Framework</h4>
+<h5>*Nodemailer</h5>
+<h5>*Angular JS</h5>
+
+<h3>Live Demo(heroku):</h3>
+<h5><https://heroku-vaga-dev.herokuapp.com/#/></h5>
+
+
